@@ -3,6 +3,8 @@
 A basic haxe-specific lua binding to [simdjson](https://simdjson.org). This
 library is intended to be used only via the Haxe compiler.
 
+Current simdjson version: 3.8.0
+
 ## Requirements
  * hx-lua-simdjson only works on 64bit systems.
  * a lua build environment with support for C++11
