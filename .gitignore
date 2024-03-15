@@ -1,3 +1,31 @@
+# Local work folder that is not checked in
+_LOCAL/
+
 test/
 *.so
+*.dll
 *.src.rock
+
+# Eclipse
+.settings/
+.project
+**/.*.md.html
+
+# IntelliJ
+.idea
+*.iml
+*.ipr
+*.iws
+
+# Eclipse Theia
+.theia
+
+# Visual Studio Code
+.vscode
+
+# OSX
+.DS_Store
+
+# Vim
+*.swo
+*.swp
