@@ -1,7 +1,7 @@
 SRC = src/hxluasimdjson.cpp src/simdjson.cpp
 INCLUDE = -I$(LUA_INCDIR)
 LIBS_PATH = -L$(LUA_LIBDIR)
-LIBS = -lpthread
+LIBS = -lpthread -llua
 FLAGS = -std=c++11 -Wall $(LIBFLAG) $(CFLAGS)
 
 all: hxsimdjson.so
