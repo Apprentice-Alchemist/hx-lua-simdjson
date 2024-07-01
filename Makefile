@@ -1,8 +1,6 @@
 SRC = src/hxluasimdjson.cpp src/simdjson.cpp
-INCLUDE = -I$(LUA_INCDIR)
-LIBS_PATH = -L$(LUA_LIBDIR)
-LIBS = -lpthread -llua
-FLAGS = -std=c++11 -Wall $(LIBFLAG) $(CFLAGS)
+INCLUDE = -I$(LUA_INCDIR) 
+FLAGS = -pthread -shared -fPIC -std=c++11 -Wall $(LIBFLAG) $(CFLAGS)
 
 ifeq ($(OS),Windows_NT)
 	TARGET = hxsimdjson.dll
@@ -22,7 +20,7 @@ print-%: ; @echo $* = $($*) # https://stackoverflow.com/a/25817631/5116073
 all: print-OS print-TARGET $(TARGET)
 
 $(TARGET):
-	$(CXX) $(SRC) $(FLAGS) $(INCLUDE) $(LIBS_PATH) $(LIBS) -o $@ -llua
+	$(CXX) $(SRC) $(FLAGS) $(INCLUDE) -o $@
 
 clean:
 	rm *.so *.dll

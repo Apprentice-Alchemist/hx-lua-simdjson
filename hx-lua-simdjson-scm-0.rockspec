@@ -1,7 +1,7 @@
 package="hx-lua-simdjson"
 version="scm-0"
 source = {
-   url = "git://github.com/sebthom/hx-lua-simdjson",
+   url = "git://github.com/Apprentice-Alchemist/hx-lua-simdjson",
    branch = "main"
 }
 description = {
