@@ -1,6 +1,6 @@
 SRC = src/hxluasimdjson.cpp src/simdjson.cpp
 INCLUDE = -I$(LUA_INCDIR) 
-FLAGS = -pthread -shared -fPIC -std=c++11 -Wall $(LIBFLAG) $(CFLAGS)
+FLAGS = -pthread -fPIC -std=c++11 -Wall $(LIBFLAG) $(CFLAGS)
 
 ifeq ($(OS),Windows_NT)
 	TARGET = hxsimdjson.dll
